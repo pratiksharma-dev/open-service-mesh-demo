@@ -35,7 +35,7 @@ spec:
       serviceAccountName: bookthief     
       containers:
         - name: bookthief
-          image: 0gis0/bookthief
+          image: eslzacryhl4sttxid2gu.azurecr.io/osm-demo/book-thief:latest
           imagePullPolicy: Always
           env:
             - name: BOOKSTORE_URL
@@ -51,7 +51,7 @@ metadata:
   labels:
     app: bookthief
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 4001

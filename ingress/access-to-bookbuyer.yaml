@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: bookbuyer.<INGRESS_PUBLIC_IP>.nip.io
+    - host: bookbuyer.20.84.179.124.nip.io
       http:
         paths:
           - path: /

@@ -37,7 +37,7 @@ spec:
         kubernetes.io/os: linux
       containers:
         - name: bookstore
-          image: 0gis0/bookstore
+          image: eslzacryhl4sttxid2gu.azurecr.io/osm-demo/bookstore:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -54,7 +54,7 @@ metadata:
   labels:
     app: bookstore
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 3000

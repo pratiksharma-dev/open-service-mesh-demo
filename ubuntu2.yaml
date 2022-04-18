@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu2
+spec:
+  nodeName:  aks-defaultpool-21837121-vmss000001 
+  containers:
+  - name: ubuntu2
+    image: mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11
+    imagePullPolicy: IfNotPresent
+    command: ["/bin/sleep", "3650d"]

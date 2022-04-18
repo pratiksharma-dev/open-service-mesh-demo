@@ -34,7 +34,7 @@ spec:
       serviceAccountName: bookbuyer
       containers:
         - name: bookbuyer
-          image: 0gis0/bookbuyer
+          image: eslzacryhl4sttxid2gu.azurecr.io/osm-demo/book-buyer:latest
           imagePullPolicy: Always
           env:
             - name: BOOKSTORE_URL
@@ -50,7 +50,7 @@ metadata:
   labels:
     app: bookbuyer
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 80
       targetPort: 4000
